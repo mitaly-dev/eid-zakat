@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 0px 200px;
+  margin: auto;
+}
+.container-lg {
+  padding: 0 110px;
+  margin: auto;
+}
+section {
+  margin-bottom: 100px;
+}
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+  display: inline-block;
+}
+:root {
+  --font-footer: "Lobster", cursive;
+  --title: #121212;
+  --paragraph: #707070;
+  --red: #ef233c;
+  --blog: #fef4f5;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter", sans-serif;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  color: var(--paragraph);
+}
+/* banner css start */
+#banner {
+  background-image: linear-gradient(#1a1a1ab4, #1a1a1a00),
+    url(../media/images/banner2);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+.banner-content {
+  color: #ffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1ft);
+  padding-right: 537px;
+}
+.banner-content h1 {
+  color: #fff;
+  font-size: 45px;
+  line-height: 57px;
+}
+.banner-content p {
+  color: #fff;
+  font-weight: 300;
+  padding: 20px 0px 30px 0;
+}
+.btn a {
+  background-color: var(--red);
+  color: #fff;
+  padding: 12px 23px;
+  border-radius: 7px;
+  transition: ease 0.4s;
+}
+.btn:hover a {
+  transform: scale(1.1);
+}
+/* banner css end */
+
+/* depend css start */
+.main-depend {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-gap: 5%;
+  align-items: center;
+}
+.depend-content h2 {
+  font-size: 35px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.depend-content p {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+}
+.depend-img {
+  height: 420px;
+}
+.depend-img img {
+  width: 100%;
+  height: 100%;
+}
+.depend2 {
+  margin-top: 70px;
+}
+/* depend css end */
+/* donation css start */
+.section-title {
+  margin: auto;
+  text-align: center;
+  width: 677px;
+}
+.section-title h3 {
+  font-size: 35px;
+  padding: 0 50px;
+}
+.section-title p {
+  padding: 25px 0 40px 0;
+}
+.donation-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  grid-gap: 20px;
+  width: 91%;
+}
+.single-donation {
+  width: 360px;
+  padding: 30px;
+  background-color: #fef4f5;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: auto;
+  grid-area: "single-donation";
+  transition: ease 0.45s;
+}
+.single-donation h3 {
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.single-donation p {
+  line-height: 25px;
+  font-size: 15px;
+}
+.single-donation:hover {
+  transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg)
+    scale3d(1.05, 1.05, 1.05);
+}
+/* donation css end */
+
+/* gallery css start */
+.main-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+}
+.single-img {
+  height: 300px;
+}
+.single-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* gallery css end */
+
+/* rewards css start */
+.main-rewards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29%, 1fr));
+  grid-column-gap: 4%;
+  justify-content: space-between;
+}
+.rewards-img {
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.rewards-img img {
+  height: 100%;
+  width: 100%;
+}
+.single-rewards {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.rewards-content {
+  padding: 30px;
+}
+.rewards-content h3 {
+  text-transform: capitalize;
+}
+.rewards-content p {
+  font-size: 15px;
+  padding: 15px 0 20px 0;
+}
+.rewards-content a {
+  color: #ef233c;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: all linear 0.3s;
+}
+.rewards-content a:hover {
+  color: blueviolet;
+}
+.single-rewards:hover {
+  box-shadow: 0px 12px 30px 0px #d3d3d3;
+  transform: perspective(1000px) rotateX(365.8deg) rotateY(11.23deg)
+    scale3d(1.05, 1.05, 1.05);
+  transition: all linear 1s;
+}
+/* rewards css end */
+
+/* footer section start */
+footer {
+  background-color: #0b0d17;
+  padding: 50px;
+  text-align: center;
+}
+footer h3 {
+  color: var(--red);
+  font-family: "Lobster", cursive;
+  text-transform: capitalize;
+  font-size: 23px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+/* footer section end */
